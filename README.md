@@ -43,9 +43,9 @@ Your compiled .exe will be located inside the dist/ directory.
 
 ⚙️ Technical Details
        Action                       Command Executed
-Audit Policy Enforcer           auditpol /set /subcategory:"Process Creation" /success:enable /failure:enable
-USN Journal Initialization      fsutil usn createjournal m=33554432 a=8388608 c:
-Deleted EXE Filtering           fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x80000200
+Audit Policy Enforcer          =  auditpol /set /subcategory:"Process Creation" /success:enable /failure:enable
+USN Journal Initialization     = fsutil usn createjournal m=33554432 a=8388608 c:
+Deleted EXE Filtering          = fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x80000200
 
 👤 Credits
 Developer & Owner: Knowx
